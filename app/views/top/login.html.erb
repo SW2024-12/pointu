@@ -1,13 +1,13 @@
 <%= form_with url: '/top/login', method: :post, local: true do |f| %>
     <p>
-        <%= f.label :uid, 'ユーザーID' %>
+        <%= f.label :uid, 'ユーザID', style: 'color: blue;' %>
         <%= f.text_field :uid %>
     </p>
     <p>
-        <%= f.label :pass, 'パスワード' %>
+        <%= f.label :pass, 'パスワード', style: 'color: blue;' %>
         <%= f.password_field :pass %>
     </p>
-    <%= f.submit 'ログイン' %>
+    <%= f.submit 'ログイン', style: 'background-color: #FF5733; color: white;' %>
 <% end %>
 
 <p><%= link_to 'ユーザ登録', new_user_path %></p>

@@ -1,12 +1,16 @@
 <%= form_with model: @user do |f| %>
     <p>
-      <%= f.label :password, 'パスワード' %>
+      <%= f.label :uid, 'ユーザID', style: 'color: #FF5733;' %>
+      <%= f.text_field :uid %>
+    </p>
+    <p>
+      <%= f.label :password, 'パスワード', style: 'color: #FF5733;' %>
       <%= f.text_field :password %>
     </p>
     <p>
-      <%= f.label :password_confirmation, 'パスワード(確認)' %>
+      <%= f.label :password_confirmation, 'パスワード(確認)', style: 'color: #FF5733;' %>
       <%= f.text_field :password_confirmation %>
     </p>
-
-  <%= f.submit '登録' %>
+    
+    <%= f.submit '登録' %>
 <% end %>
