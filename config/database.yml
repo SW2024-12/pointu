@@ -25,7 +25,7 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
-  database: render_gklq 
-  username: render_gklq_user
-  password: <%= ENV['MYSITE_DATABASE_PASSWORD'] %>
-  url: <%= ENV['DATABASE_URL'] %>
+  database: pointu 
+  username: pointu_user
+  password: <%= ENV['ZlON58kZCjGVuFa6hAi0mrXo7ioBYaqj'] %>
+  url: <%= ENV['postgresql://pointu_user:ZlON58kZCjGVuFa6hAi0mrXo7ioBYaqj@dpg-cth8ji1u0jms73818reg-a/pointu'] %>
